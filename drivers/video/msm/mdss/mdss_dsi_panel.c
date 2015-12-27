@@ -791,8 +791,6 @@ static int mdss_dsi_post_panel_on(struct mdss_panel_data *pdata)
 		mdss_dba_utils_hdcp_enable(pinfo->dba_data, true);
 	}
 
-	mdss_livedisplay_update(ctrl, MODE_UPDATE_ALL);
-
 end:
 	pr_debug("%s:-\n", __func__);
 	return 0;
